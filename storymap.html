@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>StoryMap Project | Shaelynn Grifaldo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Arapey:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+  </head>
+  
+<body class="storymap">
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="site-title">SHAELYNN GRIFALDO</h1>
+      <nav class="main-nav">
+        <a href="index.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="coursework.html">Coursework</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+    </div>
+  </header>
+  <section class="page-hero">
+    <h2>Habitat Suitability Analysis</h2>
+    <p class="page-sub">
+      Species distribution modeling using MaxEnt to predict habitat suitability
+      across North Carolina and the Uwharrie National Forest.
+    </p>
+  </section>
+  <!-- Methods Section -->
+  <section class="methods-section">
+    <h3>Software & Methods</h3>
+    <p class="methods-text">
+      ArcGIS Pro • QGIS • MaxEnt Modeling
+    </p>
+    <p class="methods-text">
+      Geospatial analysis, species distribution modeling, cross-validation,
+      and habitat suitability visualization for conservation planning.
+    </p>
+  </section>
+
+  <!-- Two-Column Images -->
+  <section class="two-column">
+    <div class="card">
+      <h3>North Carolina Model</h3>
+      <img src="NC.png" alt="North Carolina State">
+      <p>MaxEnt modeling maps showing species occurrence distribution focused on the state scale. Created across 1,000 cross-validated replicates.</p>
+    </div>
+    <div class="card">
+      <h3>Uwharrie National Forest Model</h3>
+      <img src="UNF.png" alt="Uwharrie National Forest">
+      <p>MaxEnt modeling maps showing species occurrence distribution focused on the study area. Created across 1,000 cross-validated replicates.</p>
+    </div>
+  </section>
+
+  <!-- Centered Image -->
+  <section class="centered-content">
+    <h3>Combined Model Comparison</h3>
+    <img src="both.png" alt="Both Models">
+    <p>MaxEnt map results for state-scale and study-area models. Shows suitable predicted habitats and binary classification maps of suitable vs. unsuitable areas.</p>
+  </section>
+
+  <section class="research-section">
+    <h3>Research Paper</h3>
+    <p class="research-text">
+      Full analysis detailing model methodology, cross-validation results,
+      and conservation implications.
+    </p>
+  
+    <a href="researchpaper.pdf" class="paper-button" target="_blank">
+      View Full Paper
+    </a>
+  </section>
+
+<!-- Back Button -->
+<button class="footer-button" onclick="window.location.href='coursework.html'">
+  Back to Coursework
+</button>
+
+
+ <!-- FOOTER -->
+<footer class="site-footer">
+  <p>© 2025 Shaelynn Grifaldo </p>
+</footer>
+</body>
+</html>

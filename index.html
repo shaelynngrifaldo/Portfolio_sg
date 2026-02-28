@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaelynn Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Arapey:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body>
+
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <h1 class="site-title">SHAELYNN GRIFALDO</h1>
+        <nav class="main-nav">
+          <a href="index.html">About</a>
+          <a href="resume.html">Resume</a>
+          <a href="coursework.html">Coursework</a>
+          <a href="projects.html">Projects</a>
+        </nav>
+      </div>
+    </header>
+  
+    <!-- Main -->
+    <main class="about-section">
+      <div class="about-left">
+        <h2>Environmental Studies Graduate</h2>
+        <p class="tagline">
+          Geospatial Analysis • Remote Pilot Certified • Conservation-Focused
+        </p>
+  
+        <p>
+          I am a recent graduate from <strong>The University of North Carolina at Chapel Hill</strong>,
+          where I earned a B.A. in Environmental Studies with concentrations in
+          Geographic Information Sciences and Geography.
+        </p>
+  
+        <p>
+          My work centers on geospatial analysis using ArcGIS Pro, ArcGIS Online,
+          StoryMaps, Field Maps, QGIS, R Studio, Google Earth Engine, Pix4D,
+          STATA, and MaxEnt modeling.
+        </p>
+  
+        <p>
+          I am passionate about conservation, environmental health,
+          and spatial storytelling.
+        </p>
+
+        <h2> Conservation Technician at Bald Head Island Conservancy</h2>
+        <p class="tagline">
+          Bald Head Island, North Carolina • March 2026 - Present </p>
+          <p>In this role, I help monitor and protect fragile barrier island ecosystems by conducting wildlife spotlight surveys and supporting long-term environmental data collection. My work contributes to understanding species populations, water quality, and habitat health, which directly informs conservation management decisions.</p>
+  <!-- NEW PHOTO SECTION -->
+  <div class="conservation-photos">
+    <img src="oyster.jpeg" alt="Wildlife spotlight survey">
+    <img src="pelican.jpeg" alt="Barrier island conservation work">
+  </div>
+        </div>
+  
+
+
+      <div class="about-right">
+        <img src="grad.jpeg" alt="Shaelynn Graduation Photo">
+      </div>
+      </div>
+    </main>
+  
+    <!-- Footer -->
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Shaelynn Grifaldo</p>
+    </footer>
+  
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.getElementById("year").textContent = new Date().getFullYear();
+      });
+    </script>
+  
+  </body>
+  
+</html>

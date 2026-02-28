@@ -1,0 +1,504 @@
+/* ------------------------- BODY ------------------------- */
+body {
+    font-family:'Arapey', serif;
+    background-color: #E1D0B3; /* Light Beige */
+    color: #703B3B; /* Deep Burgundy */
+    margin: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 1.3rem;
+}
+
+.site-header {
+    background: #9BB4C0; /* bubble color */
+    border-radius: 12px;
+    border: 4px solid #1b1147; 
+    color:  #703B3B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 4rem 5rem;  /* taller padding */
+    margin: 5rem auto;
+    width: 90%;           /* nearly full width */
+    height: 100px;        /* explicitly taller bubble */
+    box-shadow: 0 8px 20px rgba(63, 63, 63, 0.25);
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+
+.site-title {
+    font-size: 2.9rem;   
+    line-height: 1.8;    /* adds vertical spacing inside header */
+}
+/* ------------------------- GLOBAL HEADERS ------------------------- */
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Arapey', serif;
+    color: #703B3B; /* Deep Burgundy */
+    font-weight: 700;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+  
+  /* Keep sizing consistent sitewide */
+  h1 {
+    font-size: 2.8rem;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+  }
+  
+  h3 {
+    font-size: 2.0rem;
+  }
+  
+  /* For special section headers (like white boxes or project titles) */
+  .section-title {
+    font-family: 'Arapey', serif;
+    color: #703B3B;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+  }
+
+  
+
+/* ------------------------- NAVIGATION BUTTONS ------------------------- */
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.main-nav button, .coursework-buttons .sub-btn, button {
+    font-family: 'Arapey', serif;
+    background-color: #A18D6D; /* Olive Green */
+    color: #FFFFFF;
+    border: none;
+    border-radius: 25px;
+    padding: 1rem 2rem;
+    font-weight: 600;
+    font-size: 1.7rem;
+    width: 400px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+  
+.main-nav button:hover, .coursework-buttons .sub-btn:hover, button:hover {
+    background-color: #703B3B; /* Deep Burgundy */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* ------------------------- COURSEWORK BUTTONS ------------------------- */
+.coursework-buttons {
+    font-family: 'Arapey', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto 4rem auto;
+}
+
+.coursework-buttons .sub-btn {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 2rem;
+}
+/* ------------------------- PROJECTS BUTTONS ------------------------- */
+.projects-buttons {
+    font-family: 'Arapey', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto 4rem auto;
+}
+
+.projects-buttons .sub-btn {
+    width: 100%;
+    text-align: center;
+    padding: 2rem 2rem;
+}
+
+
+
+/* ------------------------- SECTIONS ------------------------- */
+section {
+    padding: 2rem;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-sub, .coursework-sub, .projects-sub,.resume-sub {
+    font-family: 'Arapey', serif;
+    color: #703B3B;
+    font-weight: 600;
+}
+/* ------------------------- ABOUT SECTION ------------------------- */
+.about h3 {
+    font-size: 2.5rem;    /* bigger than default */
+    font-weight: 700;     /* bold */
+    color: #703B3B;       
+    margin-bottom: 1rem;
+}
+.about p strong {
+    color: #48644f;  
+    font-size: 1.4rem;
+    font-weight: 900;
+}
+
+
+/* ------------------------- IMAGE STYLING ------------------------- */
+.about-photo img.grad {
+    max-width: 40%;
+    height: 400px;
+    border-radius: 12px;
+    border: 4px solid #A18D6D; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: block;
+    margin: 2rem auto;
+}
+.card img, .centered-content img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 12px;
+    border: 4px solid #A18D6D; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: block;
+    margin: 2rem auto;
+}
+.description {
+    max-width: 80%;
+    background-color:#FFFFFF;
+    height: auto;
+    border-radius: 12px;
+    border: 4px solid #A18D6D; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: block;
+    margin: 2rem auto;
+}
+.pdf-viewer {
+    width: 90%;
+    max-width: 800px;
+    height: 60vh; /* takes up 80% of the viewport height */
+    border: none;
+    display: block;
+    margin: 1.5rem auto;
+  }
+  
+/* ------------------------- TWO-COLUMN IMAGE SECTION ------------------------- */
+.two-column {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+}
+
+.card {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    flex: 1 1 450px;
+}
+
+
+/* ------------------------- CENTERED CONTENT (StoryMap combined image) ------------------------- */
+.centered-content {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    padding: 2rem;
+    margin: 2rem auto;
+    text-align: center;
+    max-width: 950px;
+}
+
+.centered-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 4px solid #A18D6D;
+}
+/* ------------------------- RESEARCH PAPER SECTION ------------------------- */
+.research {
+    text-align: center;
+    margin: 3rem auto;
+    max-width: 1000px;       /* make the section wider */
+    padding: 2rem;
+    background-color: #FFFFFF; 
+    border-radius: 20px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+.research h3 {
+    font-size: 1.6rem;       /* larger heading */
+    font-weight: 700;
+    color: #703B3B;         
+    margin-bottom: 1rem;
+}
+
+.research embed {
+    width: 900px;            /* fill the container */
+    height: 900px;          /* taller embed for readability */
+    max-width: 1000px;      /* match section width */
+    border-radius: 15px;
+    border: 4px solid #6A8D73; 
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+/* ------------------------- RESUME EMBED ------------------------- */
+.resume-box embed {
+    width: 100%;
+    height: 85vh;
+    border-radius: 15px;
+    border: 4px solid #A18D6D;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+/* ------------------------- DRONE PAGE ------------------------- */
+body.drone {
+    font-family: 'Arapey', serif;
+    background-color: #E1D0B3; 
+    color: #703B3B;            
+    margin: 0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+
+/* ------------------------- DRONE PAGE HORIZONTAL IMAGE FLOW ------------------------- */
+.drone .image-flow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;          /* prevent stacking */
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem auto;
+    overflow-x: auto;           /* horizontal scroll for small screens */
+    padding: 1rem;
+}
+
+.drone .image-flow .image-card {
+    flex: 0 0 auto;             /* prevents shrinking */
+    width: 300px;           /* smaller card width */
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 0.8rem;
+    text-align: center;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+}
+
+.drone .image-flow .image-card img {
+    width: 100%;                /* fits card width */
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid #6A8D73; /* slightly thinner border for smaller image */
+    margin-bottom: 0.5rem;
+}
+
+.drone .image-flow .arrow {
+    font-size: 4.0rem;
+    color: #6A8D73;
+    flex: 0 0 auto;
+    margin: 0 0.3rem;
+}
+.drone h3 { 
+    font-size: 1.5rem; 
+}
+.drone p{
+    font-size: 2.5;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+}
+/* ------------------------- DRONE PAGE DESCRIPTION BOX ------------------------- */
+.drone .description {
+    background-color: #FFFFFF;         /* white box */
+    border-radius: 20px;               /* rounded corners */
+    padding: 1.5rem 2rem;              /* spacing inside box */
+    margin: 3rem auto;                 /* spacing from other sections */
+    max-width: 900px;                  /* keeps box from being too wide */
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1); /* subtle shadow */
+    text-align: center;                  /* left align text like storymap cards */
+    color: #703B3B;                    /* deep burgundy text to match site */
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .drone .description {
+        padding: 1rem 1.2rem;
+        margin: 1.5rem auto;
+    }
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .drone .image-flow {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    .drone .image-card {
+        min-width: 200px;
+    }
+}
+/* ------------------------- APPLIED GIS PAGE ------------------------- */
+.gis .gis-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 1rem;
+}
+
+.gis .gis-card {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    text-align: center;
+    color: #703B3B;
+    transition: transform 0.3s ease;
+}
+
+.gis .gis-card:hover {
+    transform: translateY(-5px);
+}
+
+.gis .gis-card h3 {
+    color: #6A8D73;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+}
+
+.gis .gis-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 3px solid #A18D6D;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 1rem;
+}
+
+.gis .gis-card .desc {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #703B3B;
+}
+
+.gis .gis-card.single {
+    grid-column: 1 / -1; /* center the last one alone */
+    max-width: 600px;
+    margin: 0 auto;
+}
+/* GEO VISUALIZATION PAGE */
+.geo-embed {
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    margin: 40px auto;
+    width: 85%;
+    max-width: 1200px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+  }
+  
+  .geo-embed h2 {
+    color: #3b703b;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .geo-embed p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 25px;
+  }
+  
+  .iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 60%; /* Adjust height ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+ /* ------------------------- FOOTER ------------------------- */
+.site-footer {
+    text-align: center;
+    padding: 1.9rem;
+    background-color: #9BB4C0; /* Light Blue */
+    border-color:#1b1147;
+    color: #FFFFFF;
+    font-size: 1.6rem;
+    margin-top: auto;
+}
+
+.site-footer a {
+    color: #e8d4b1; /* Light Beige links */
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+.site-footer h3 {
+    font-size: 1.8rem;    /* bigger than default */
+    font-weight: 700;     /* bold */
+    color: #703B3B;       
+    margin-bottom: 1rem;
+}
+
+/* ------------------------- RESPONSIVE DESIGN ------------------------- */
+@media (max-width: 768px) {
+    .two-column {
+        flex-direction: column;
+        align-items: center;
+    }
+    .resume-box embed {
+        height: 60vh;
+    }
+    .coursework-buttons {
+        width: 90%;
+    }
+}

@@ -1,0 +1,872 @@
+/* ------------------------- RESET ------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* ------------------------- BODY ------------------------- */
+  body {
+    font-family: 'Arapey', serif;
+    background-color: #f7f6f2;
+    color: #111;
+    line-height: 1.6;
+  }
+  
+  /* ------------------------- HEADER ------------------------- */
+  .site-header {
+    padding: 70px 50px;
+  }
+  
+  .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .site-title {
+    font-size: clamp(50px, 1.2vw, 50px);
+    letter-spacing: 5px;
+    font-weight: 400;
+  }
+  
+  /* ------------------------- NAVIGATION ------------------------- */
+  .main-nav a {
+    text-decoration: none;
+    margin-left: 40px;
+    color: #111;
+    font-size: 30px;
+    position: relative;
+    transition: opacity 0.3s ease;
+  }
+  
+  .main-nav a:hover {
+    opacity: 0.5;
+  }
+  
+  /* ------------------------- ABOUT SECTION ------------------------- */
+  .about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8vw;
+    min-height: 80vh;
+    flex-wrap: nowrap;
+  }
+  
+  
+  .about-left {
+    width: 50%;
+  }
+  
+  .about-left h2 {
+    font-size: clamp(30px, 4vw, 40px);
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    margin-top: 0.9rem;
+    line-height: 1.1;
+  }
+  
+  .tagline {
+    font-size: clamp(14px, 1.4vw, 18px);
+    margin-bottom: 2.5rem;
+    letter-spacing: 1px;
+  }
+  
+  .about-left p {
+    font-size: clamp(18px, 1.3vw, 18px);
+    margin-bottom: 1.5rem;
+    max-width: 550px;
+  }
+  
+  .about-right {
+    width: 40%;
+    min-width: 280px;
+  }
+  
+  .about-right img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: 4px solid #111;
+  }
+  
+  .conservation-photos {
+    margin-top: 2rem;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .conservation-photos img {
+    width: 80%;
+    height: 500px;
+    object-fit: cover;
+    border: 4px solid #111;
+    box-sizing: border-box;
+  }
+  
+  
+  /* ------------------------- FOOTER ------------------------- */
+  .site-footer {
+    padding: 60px 80px;
+    font-size: 20px;
+    opacity: 0.6;
+  }
+  
+  /* ------------------------- RESPONSIVE ------------------------- */
+  @media (max-width: 900px) {
+    .about-section {
+      flex-direction: column;
+      padding: 80px 40px;
+    }
+  
+    .about-left,
+    .about-right {
+      width: 100%;
+    }
+  
+    .about-left {
+      margin-bottom: 50px;
+    }
+  
+    .header-inner {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .main-nav a {
+      margin-left: 20px;
+    }
+  }
+  
+
+
+ /* ---------------- RESUME LAYOUT ---------------- */
+
+ .resume-section {
+    padding: 8vw;
+    max-width: 900px;
+    margin: 0 auto; /* THIS centers the whole block */
+  }
+  
+  
+  .resume-header {
+    text-align: center;
+    margin-bottom: 5rem;
+    position: relative;
+  }
+  
+  .resume-header h2 {
+    font-size: clamp(32px, 4vw, 54px);
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+  
+  .download-link {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #111;
+    border-bottom: 1px solid #111;
+    padding-bottom: 3px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .download-link:hover {
+    opacity: 0.5;
+  }
+  
+  
+  .resume-block {
+    margin-bottom: 5rem;
+    width: 900px;
+  }
+  
+  .resume-block h3 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    opacity: 0.6;
+  }
+  
+  .resume-entry {
+    margin-bottom: 3rem;
+  }
+  
+  /* ----- Company Name + Date ----- */
+.entry-top {
+  display: flex;
+  justify-content: space-between; /* company name left, date right */
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.entry-top h4 {
+  font-size: 22px; 
+  font-weight: 600;
+  margin: 0;
+}
+
+.entry-top span {
+  font-size: 23px;   /* same as role dates */
+  opacity: 0.6;
+}
+
+/* ----- Role + Date ----- */
+.role-header {
+  display: flex;
+  justify-content: space-between; /* role left, date right */
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.role-block .role {
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 500;
+  margin: 0;
+}
+
+.role-date {
+  font-size: 23px; /* match company date */
+  opacity: 0.6;
+}
+
+  
+  /* Role title */
+  .role-block .role {
+    font-size: 1.25rem;  /* bigger role title */
+    font-style: italic;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  /* Role descriptions (bullets) */
+  .role-block ul li {
+    font-size: 2.0rem; /* larger bullets */
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+  }
+  
+  .resume-entry ul { 
+    font-size: 20px;
+  }
+  .resume-entry p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-top: 0.5rem;
+    max-width: 750px;
+  }
+  .certification-grid {
+    display: grid;
+    gap: 2.5rem;
+    font-size: 20px;
+  }
+  .skills-grid {
+    display: grid;
+    gap: 2.5rem;
+  }
+  
+  .skills-grid h4 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+  }
+  
+  .skills-grid p {
+    font-size: 20px;
+    opacity: 0.8;
+  }
+  
+  /* ----------------- EXPERIENCE BLOCKS WITH FLOW LINE ----------------- */
+
+  .experience {
+    position: relative;
+    margin-bottom: 5rem;
+    padding-left: 2.6rem;
+  }
+  
+  .experience::before {
+    content: '';
+    position: absolute;
+    left: 0; /* adjust to match spacing you want */
+    top: 2.5rem; /* start below the heading */
+    bottom: 0;   /* goes to the bottom of the section */
+    width: 2px;
+    background-color: #0d4a66;
+  }
+  
+  .company-block {
+    margin-bottom: 10rem;
+    position: relative;
+  }
+  
+  .entry-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1rem;
+  }
+  
+  .entry-top h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  .entry-top span {
+    font-size: 30px;
+    opacity: 0.6;
+  }
+  
+  .role-block {
+    margin-left: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .role {
+    font-style: italic;
+    margin-bottom: 0.5rem;
+  }
+  
+  .role-block ul {
+    margin: 0;
+    padding-left: 1.5rem;
+  }
+  
+  .role-block ul li {
+    margin-bottom: 0.5rem;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  
+  .role-block {
+    position: relative; /* needed for absolute dot positioning */
+    margin-left: 1.5rem;
+    margin-bottom: 2rem;
+}
+/* ------------------------- COURSEWORK HEADER ------------------------- */
+.coursework-section h2 {
+    font-size: 2.5rem;           /* matches Resume/About page headings */
+    color: #180909;              /* deep burgundy */
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    line-height: 1.3;
+  }
+  
+  .coursework-sub {
+    font-size: 1.3rem;           /* slightly smaller than heading */
+    color: #48644f;              /* subtle green accent for description */
+    font-weight: 500;
+    margin-bottom: 3rem;
+    max-width: 800px;            /* limits width for readability */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    line-height: 1.6;
+  }
+  
+/* ------------------------- COURSEWORK GRID & CARDS ------------------------- */
+.coursework-section {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto 5rem auto;
+  }
+  
+  .coursework-sub {
+    font-size: 1.3rem;
+    color: #703B3B;
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+  
+  .coursework-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  .course-card {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+  }
+  
+  .course-card h4 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #703B3B;
+  }
+  
+  .course-card p {
+    font-size: 1.2rem;
+    color: #48644f; /* subtle green accent for descriptions */
+    line-height: 1.6;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    background-color: #f7f5f0; /* slight highlight on hover */
+  }
+  
+
+  /* ---------------- CONSISTENT PAGE HERO ---------------- */
+
+.page-hero {
+  text-align: center;
+  max-width: 900px;
+  margin: 5rem auto 4rem auto;
+  padding: 0 2rem;
+}
+
+.page-hero h2 {
+  font-size: clamp(32px, 4vw, 48px);
+  font-weight: 400;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.page-sub {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  opacity: 0.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ---------------- LARGER GIS GALLERY ---------------- */
+
+.gis-gallery {
+  max-width: 1400px;   /* allow more horizontal space */
+  margin: 0 auto 6rem auto;
+  padding: 0 4rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 4rem;
+}
+/* ---------------- GIS CARDS ---------------- */
+
+
+
+.gis-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.gis-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.gis-card h3 {
+  font-size: 1.6rem;   /* bigger title */
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+
+.gis-card img {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.gis-card .desc {
+  font-size: 1.3rem;  /* larger description text */
+  line-height: 1.8;
+  opacity: 0.75;
+}
+
+.footer-button {
+  display: block;
+  margin: 0 auto 5rem auto;
+  padding: 0.9rem 2rem;
+  background: transparent;
+  border: 1px solid #111;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer-button:hover {
+  background: #111;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .gis-gallery {
+    grid-template-columns: 1fr;
+    padding: 0 1.5rem;
+  }
+}
+
+/* ---------------- METHODS SECTION ---------------- */
+
+.methods-section {
+  text-align: center;
+  max-width: 800px;
+  margin: 3rem auto 5rem auto;
+  padding: 0 2rem;
+}
+
+.methods-section h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.methods-text {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  opacity: 0.75;
+}
+
+/* ---------------- TWO COLUMN MODEL CARDS ---------------- */
+
+.two-column {
+  max-width: 1200px;
+  margin: 0 auto 6rem auto;
+  padding: 0 3rem;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  gap: 4rem;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+}
+
+.card p {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  opacity: 0.75;
+}
+
+/* ---------------- CENTERED COMPARISON ---------------- */
+
+.centered-content {
+  max-width: 900px;
+  margin: 0 auto 6rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.centered-content h3 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.centered-content img {
+  width: 100%;
+  border-radius: 18px;
+  margin-bottom: 1.5rem;
+}
+
+.centered-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.75;
+}
+/* ---------------- RESEARCH PAPER SECTION ---------------- */
+
+.research-section {
+  text-align: center;
+  margin: 0 auto 6rem auto;
+}
+
+.research-text {
+  font-size: 1.1rem;
+  opacity: 0.75;
+  margin-bottom: 2rem;
+}
+
+.paper-button {
+  padding: 0.9rem 2rem;
+  border: 1px solid #111;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  color: #111;
+}
+
+.paper-button:hover {
+  background: #111;
+  color: #fff;
+}
+
+/* ---------------- PROCESS SECTION ---------------- */
+
+.process-section {
+  max-width: 1400px;   /* wider overall container */
+  margin: 0 auto 8rem auto;
+  padding: 0 4rem;
+  text-align: center;
+}
+
+.process-title {
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+}
+
+/* Bigger grid columns */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  justify-content: center;
+}
+
+
+/* Larger cards */
+.process-card {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 3.5rem;
+  transition: all 0.3s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+}
+
+.process-card h4 {
+  font-size: 1.4rem;
+  margin-bottom: 1.8rem;
+}
+
+.process-card img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 1.8rem;
+}
+
+.process-card p {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  opacity: 0.8;
+}
+.process-card:last-child {
+  grid-column: 1 / -1;   /* span full width */
+  max-width: 700px;
+  margin: 0 auto;
+}
+/* ---------------- PROJECT DESCRIPTION ---------------- */
+
+.project-description {
+  max-width: 800px;
+  margin: 0 auto 6rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.project-description h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-description p {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  opacity: 0.75;
+  margin-bottom: 1.5rem;
+}
+/* ---------------- FINDINGS SECTION ---------------- */
+
+.findings-section {
+  max-width: 900px;
+  margin: 0 auto 6rem auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.findings-section h3 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.findings-content p {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  opacity: 0.75;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 900px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-card:last-child {
+    grid-column: auto;
+    max-width: 100%;
+  }
+}
+
+/* ---------------- GEO PAGE ---------------- */
+
+.geo-section {
+  max-width: 1500px;
+
+  margin: 0 auto 6rem auto;
+  padding: 0 3rem;
+  text-align: center;
+}
+
+.geo-section h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.geo-text {
+  font-size: 1.5rem;
+  line-height: 1.7;
+  opacity: 0.75;
+  margin-bottom: 3rem;
+}
+
+.iframe-container {
+  width: 100%;
+  height: 700px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ---------------- PROJECTS PAGE ---------------- */
+
+.projects-grid {
+  max-width: 1000px;
+  margin: 0 auto 8rem auto;
+  padding: 0 3rem;
+
+  display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers cards horizontally */
+    gap: 50px; /* spacing between cards */
+
+  }
+
+
+.project-card {
+  background: #ffffff;
+  border-radius: 28px;
+  padding: 3rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+}
+
+.project-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+}
+
+.project-card p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  opacity: 0.75;
+  margin-bottom: 1.5rem;
+}
+
+.project-link {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.project-description p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  opacity: 0.75;
+  margin-bottom: 1.5rem;
+}
+.page-hero p { 
+  font-size: 1.3rem;
+}
+
+/* Cards Grid Spacing */
+.cards-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers cards horizontally */
+  gap: 50px; /* spacing between cards */
+  margin: 40px 0;
+}
+
+/* Individual Project Cards */
+.project-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 80%; /* adjusts card width to look centered and not too wide */
+  max-width: 800px; /* keeps them from being too large on big screens */
+}
+
+/* PDF Viewer */
+.pdf-container {
+  width: 100%;
+  max-height: 500px; /* adjust as needed */
+  overflow: auto;
+  margin: 20px 0;
+}
+
+.pdf-viewer {
+  width: 100%;
+  height: 600px; /* embedded PDF height */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}

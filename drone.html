@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Drone Mapping Project | Shaelynn Grifaldo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Arapey:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+  </head>
+  
+<body class="drone">
+ <!-- Header -->
+ <header class="site-header">
+  <div class="header-inner">
+    <h1 class="site-title">SHAELYNN GRIFALDO</h1>
+    <nav class="main-nav">
+      <a href="index.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="coursework.html">Coursework</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </div>
+</header>
+<section class="page-hero">
+  <h2>Drone Mapping & Orthomosaic Production</h2>
+  <p class="page-sub">
+    UAV-based geospatial data collection and photogrammetric processing 
+    to produce high-accuracy orthomosaics and validate survey precision.
+  </p>
+</section>
+
+<section class="methods-section">
+  <h3>Software & Methods</h3>
+  <p class="methods-text">
+    Pix4D • ArcGIS Pro • R Studio
+  </p>
+  <p class="methods-text">
+    sUAS flight mission planning, aerial image capture, photogrammetric 
+    processing, orthomosaic generation, GPS & ground control point alignment,
+    and statistical validation against traditional survey methods.
+  </p>
+</section>
+
+<section class="process-section">
+  <h3 class="process-title">Drone Mapping Workflow</h3>
+
+  <div class="process-grid">
+
+    <div class="process-card">
+      <h4>1. Overlapping Image Capture</h4>
+      <img src="overlap.png" alt="Overlapping Images">
+      <p>High-overlap aerial imagery collected through structured UAV flight missions.</p>
+    </div>
+
+    <div class="process-card">
+      <h4>2. Keypoint Matching</h4>
+      <img src="key.png" alt="Key Points">
+      <p>Feature detection and tie-point generation for accurate image alignment.</p>
+    </div>
+
+    <div class="process-card">
+      <h4>3. Orthomosaic Output</h4>
+      <img src="ortho.png" alt="Orthomosaic Output">
+      <p>Georeferenced orthorectified mosaic generated for spatial analysis and measurement.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="project-description">
+  <h3>Project Overview</h3>
+  <p>
+    This project demonstrates a complete drone mapping workflow using Pix4D.
+    Images were captured via sUAS flight missions, processed to identify ground
+    control points, and transformed into a georeferenced orthomosaic. 
+  </p>
+  <p>
+    The workflow included image alignment, keypoint matching, bundle adjustment,
+    and orthorectification to produce a high-resolution spatial dataset suitable
+    for measurement and validation analysis.
+  </p>
+</section>
+
+<section class="findings-section">
+  <h3>Findings & Lessons Learned</h3>
+
+  <div class="findings-content">
+    <p>
+      Drone-derived GPS measurements were compared with traditional ground 
+      surveys for length, width, and positional accuracy.
+    </p>
+
+    <p>
+      Results showed no statistically significant differences in horizontal
+      measurements. Elevation accuracy was less reliable due to limited GCPs
+      and environmental constraints.
+    </p>
+
+    <p>
+      The UAV workflow significantly reduced time requirements, demonstrating
+      strong potential for large-scale or difficult-to-access survey areas.
+    </p>
+  </div>
+</section>
+
+<!-- Back Button -->
+<button class="footer-button" onclick="window.location.href='coursework.html'">
+  Back to Coursework
+</button>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p>© 2025 Shaelynn Grifaldo </p>
+</footer>
+
+</body>
+</html>

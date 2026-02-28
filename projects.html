@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects | Shaelynn Grifaldo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Arapey:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+  
+
+<body>
+ <!-- Header -->
+ <header class="site-header">
+  <div class="header-inner">
+    <h1 class="site-title">SHAELYNN GRIFALDO</h1>
+    <nav class="main-nav">
+      <a href="index.html">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="coursework.html">Coursework</a>
+      <a href="projects.html">Projects</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <h2>Projects</h2>
+    <p class="page-sub">
+      Collaborative conservation and environmental mapping projects developed
+      for different organizations.
+    </p>
+  </section>
+
+  <!-- PROJECT CARDS -->
+  <section class="projects-grid">
+
+    <div class="project-card" onclick="window.location.href='bhic.html'">
+      <h3>Bald Head Island Conservancy</h3>
+      <p>
+        Geospatial analysis and mapping support for coastal conservation
+        initiatives and habitat research.
+      </p>
+      <span class="project-link">View Project →</span>
+    </div>
+
+    <div class="project-card" onclick="window.location.href='floha.html'">
+      <h3>Friends of the Lower Haw River</h3>
+      <p>
+        Spatial data products and visualization tools supporting watershed
+        conservation and environmental outreach.
+      </p>
+      <span class="project-link">View Project →</span>
+    </div>
+
+  </section>
+
+</main>
+
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <section id="contact" class="contact">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:shaelynngrifaldo@gmail.com">shaelynngrifaldo@gmail.com</a></p>
+      </section>
+      <p>© <span id="year"></span> Shaelynn Grifaldo • Built with HTML, CSS & JS</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("year").textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>
+
+

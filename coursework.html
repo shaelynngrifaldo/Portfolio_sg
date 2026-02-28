@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Coursework | Shaelynn Grifaldo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Arapey:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+
+  </head>
+  
+
+  <body>
+    <!-- Header -->
+    <header class="site-header">
+      <div class="header-inner">
+        <h1 class="site-title">SHAELYNN GRIFALDO</h1>
+        <nav class="main-nav">
+          <a href="index.html">About</a>
+          <a href="resume.html">Resume</a>
+          <a href="coursework.html">Coursework</a>
+          <a href="projects.html">Projects</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="coursework" class="coursework-section">
+        <h2>Coursework</h2>
+        <p class="coursework-sub">
+          Explore some of the key GIS and conservation-focused coursework projects I’ve completed.
+        </p>
+    
+        <div class="coursework-grid">
+    
+          <div class="course-card" onclick="window.location.href='gis.html'">
+            <h4>Applied GIS Techniques</h4>
+            <p>Hands-on projects using ArcGIS Pro, ArcGIS Online, and QGIS to analyze spatial data and create professional maps.</p>
+          </div>
+    
+          <div class="course-card" onclick="window.location.href='storymap.html'">
+            <h4>Habitat Suitability Analysis</h4>
+            <p>Species distribution modeling using MaxEnt and GIS tools to identify suitable habitats for conservation species.</p>
+          </div>
+    
+          <div class="course-card" onclick="window.location.href='drone.html'">
+            <h4>Drone Mapping Comparison</h4>
+            <p>Comparison of drone imagery processing and mapping techniques using Pix4D and GIS for conservation purposes.</p>
+          </div>
+    
+          <div class="course-card" onclick="window.location.href='geovisualization.html'">
+            <h4>Geovisualization</h4>
+            <p>Creation of interactive maps and visualizations to communicate spatial patterns in environmental data.</p>
+          </div>
+    
+        </div>
+      </section>
+    </main>
+    
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <section id="contact" class="contact">
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:shaelynngrifaldo@gmail.com">shaelynngrifaldo@gmail.com</a></p>
+      </section>
+      <p>© <span id="year"></span> Shaelynn Grifaldo • Built with HTML, CSS & JS</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("year").textContent = new Date().getFullYear();
+    });
+  </script>
+</body>
+</html>
